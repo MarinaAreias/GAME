@@ -1,0 +1,60 @@
+#score {
+  text-align: center;
+}
+
+#game {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  margin: auto;
+  background-image: url("https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+}
+
+#dino {
+  height: 75px;
+  width: 75px;
+  position: relative;
+  top: 225px;
+  background-image: url("https://lh3.googleusercontent.com/proxy/jN_c-5-u2o7ZnnDDmkHyudHJd-HoRzUQLMn45A7Mrxxa1QDKlbukXbUaWiu0h8xzUunEw6UFWbRROJR83uQcSZl8FEHXffA0");
+  background-size: cover;
+}
+
+#rock {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 175px;
+  left: 550px;
+  background-image: url("https://lh3.googleusercontent.com/proxy/d_nyLNVmMk1dK-zfid_vmcSXzYNdCMe8f9Dn4BfJdQc0jT7iVPH4x_mw5aOSsrDd05a8SM6M4gs95_dAairoX8rdknO7ba0c");
+  background-size: cover;
+  animation: rock 1.33s infinite;
+}
+
+@keyframes rock {
+  0% {
+    left: 550px;
+  }
+  100% {
+    left: -50px;
+  }
+}
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0% {
+    top: 225px;
+  }
+  50% {
+    top: 75px;
+  }
+  75% {
+    top: 75px;
+  }
+  100% {
+    top: 225px;
+  }
+}
